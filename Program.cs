@@ -28,11 +28,17 @@ namespace Tast10var5
 
             for (int i = 0; i < row - 1; i++)
             {
-                if (numbersArray[i, column - 1] < numbersArray[i + 1, column - 1])
+                for (int j = i; j < row; j++)
                 {
-                    temp = numbersArray[i, column - 1];
-                    numbersArray[i, column - 1] = numbersArray[i + 1, column - 1];
-                    numbersArray[i + 1, column - 1] = temp;
+                    if (numbersArray[i, column - 1] < numbersArray[j, column - 1])
+                    {
+                        for (int k = 0; k < column; k++)
+                        {
+                            temp = numbersArray[i, k];
+                            numbersArray[i, k] = numbersArray[j, k];
+                            numbersArray[j, k] = temp;
+                        }
+                    }
                 }
             }
 

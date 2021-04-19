@@ -9,7 +9,7 @@ namespace Tast10var5
             //* Отсортировать по убыванию элементов последнего столбца
             //* целочисленный двухмерный массив 5×4.
 
-            int row = 5;
+            /*int row = 5;
             int column = 4;
             int[,] numbersArray = new int[row, column];
             Random random = new Random();
@@ -49,13 +49,41 @@ namespace Tast10var5
                     Console.Write($"{numbersArray[i, j]} ");
                 }
                 Console.WriteLine();
-            }
+            }*/
 
             //* Заполнить массив 3х3 числами по возрастанию, по спирали начиная с 
             //* центра. 
             //* 7 8 9
             //* 6 1 2
             //* 5 4 3
+
+
+            int arraySize = 3;
+            int a = arraySize - 1;
+            int b = arraySize;
+            int c = -1;
+            int d = 9;
+            int[,] spiralArray = new int[arraySize, arraySize];
+            for (int i = a; i >= 0; c *= -1)
+            {
+                for (int j = i; j >= 0; --j)
+                {
+                    spiralArray[a, b += c] = d--;
+                }
+                for (int j = --i; j >= 0; --j)
+                {
+                    spiralArray[a += c, b] = d--;
+                }
+            }
+            
+            for (int i = arraySize - 1; i >= 0; i--)
+            {
+                for (int j = 0; j < arraySize; j++)
+                {
+                    Console.Write($"{spiralArray[i, j]} ");
+                }
+                Console.WriteLine();
+            }
 
 
             //* Разработать программу, реализующую обработку числового двухмерного 

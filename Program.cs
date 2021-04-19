@@ -9,10 +9,10 @@ namespace Tast10var5
             //* Отсортировать по убыванию элементов последнего столбца
             //* целочисленный двухмерный массив 5×4.
 
+            Random random = new Random();
             /*int row = 5;
             int column = 4;
             int[,] numbersArray = new int[row, column];
-            Random random = new Random();
             int temp;
 
             for (int i = 0; i < row; i++)
@@ -75,7 +75,7 @@ namespace Tast10var5
                     spiralArray[a += c, b] = d--;
                 }
             }
-            
+
             for (int i = arraySize - 1; i >= 0; i--)
             {
                 for (int j = 0; j < arraySize; j++)
@@ -89,6 +89,50 @@ namespace Tast10var5
             //* Разработать программу, реализующую обработку числового двухмерного 
             //* произвольного массива тремя методами сортировки (пузырьком,
             //* вставкой, выбором).
+
+            int sizeArray = 5;
+            int[,] array = new int[sizeArray, sizeArray];
+            int tempElem;
+
+            for (int i = 0; i < sizeArray; i++)
+            {
+                for (int j = 0; j < sizeArray; j++)
+                {
+                    array[i, j] = random.Next(100);
+                    Console.Write($"{array[i, j]} ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
+
+            for (int j = 0; j < sizeArray; j++)
+            {
+                bool sorted = false;
+                while (!sorted)
+                {
+                    sorted = true;
+                    for (int i = 0; i < sizeArray - 1; i++)
+                    {
+                        if (array[i, j] > array[i + 1, j])
+                        {
+                            tempElem = array[i, j];
+                            array[i, j] = array[i + 1, j];
+                            array[i + 1, j] = tempElem;
+                            sorted = false;
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < sizeArray; i++)
+            {
+                for (int j = 0; j < sizeArray; j++)
+                {
+                    Console.Write($"{array[i, j]} ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }

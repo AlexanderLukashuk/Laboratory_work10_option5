@@ -15,9 +15,9 @@ namespace Tast10var5
             Random random = new Random();
             int temp;
 
-            for (int i = 0; i < column; i++)
+            for (int i = 0; i < row; i++)
             {
-                for (int j = 0; j < row; j++)
+                for (int j = 0; j < column; j++)
                 {
                     numbersArray[i, j] = random.Next(100);
                     Console.Write($"{numbersArray[i, j]} ");
@@ -26,12 +26,23 @@ namespace Tast10var5
             }
             Console.WriteLine();
 
-            for (int i = 0; i < column - 1; i++)
+            for (int i = 0; i < row - 1; i++)
             {
-                if (numbersArray[i, row - 1] < numbersArray[i + 1, row - 1])
+                if (numbersArray[i, column - 1] < numbersArray[i + 1, column - 1])
                 {
-
+                    temp = numbersArray[i, column - 1];
+                    numbersArray[i, column - 1] = numbersArray[i + 1, column - 1];
+                    numbersArray[i + 1, column - 1] = temp;
                 }
+            }
+
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < column; j++)
+                {
+                    Console.Write($"{numbersArray[i, j]} ");
+                }
+                Console.WriteLine();
             }
 
             //* Заполнить массив 3х3 числами по возрастанию, по спирали начиная с 

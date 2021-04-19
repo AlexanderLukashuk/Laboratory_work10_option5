@@ -1,0 +1,12 @@
+/Users/sanya/работа/вариант_5/лабораторка_10/Tast10var5/bin/Debug/netcoreapp3.1/Tast10var5.deps.json
+/Users/sanya/работа/вариант_5/лабораторка_10/Tast10var5/bin/Debug/netcoreapp3.1/Tast10var5.runtimeconfig.json
+/Users/sanya/работа/вариант_5/лабораторка_10/Tast10var5/bin/Debug/netcoreapp3.1/Tast10var5.runtimeconfig.dev.json
+/Users/sanya/работа/вариант_5/лабораторка_10/Tast10var5/bin/Debug/netcoreapp3.1/Tast10var5.dll
+/Users/sanya/работа/вариант_5/лабораторка_10/Tast10var5/bin/Debug/netcoreapp3.1/Tast10var5.pdb
+/Users/sanya/работа/вариант_5/лабораторка_10/Tast10var5/obj/Debug/netcoreapp3.1/Tast10var5.csprojAssemblyReference.cache
+/Users/sanya/работа/вариант_5/лабораторка_10/Tast10var5/obj/Debug/netcoreapp3.1/Tast10var5.AssemblyInfoInputs.cache
+/Users/sanya/работа/вариант_5/лабораторка_10/Tast10var5/obj/Debug/netcoreapp3.1/Tast10var5.AssemblyInfo.cs
+/Users/sanya/работа/вариант_5/лабораторка_10/Tast10var5/obj/Debug/netcoreapp3.1/Tast10var5.csproj.CoreCompileInputs.cache
+/Users/sanya/работа/вариант_5/лабораторка_10/Tast10var5/obj/Debug/netcoreapp3.1/Tast10var5.dll
+/Users/sanya/работа/вариант_5/лабораторка_10/Tast10var5/obj/Debug/netcoreapp3.1/Tast10var5.pdb
+/Users/sanya/работа/вариант_5/лабораторка_10/Tast10var5/obj/Debug/netcoreapp3.1/Tast10var5.genruntimeconfig.cache

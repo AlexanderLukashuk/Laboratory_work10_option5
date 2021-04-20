@@ -10,7 +10,7 @@ namespace Tast10var5
             //* целочисленный двухмерный массив 5×4.
 
             Random random = new Random();
-            /*int row = 5;
+            int row = 5;
             int column = 4;
             int[,] numbersArray = new int[row, column];
             int temp;
@@ -49,7 +49,7 @@ namespace Tast10var5
                     Console.Write($"{numbersArray[i, j]} ");
                 }
                 Console.WriteLine();
-            }*/
+            }
 
             //* Заполнить массив 3х3 числами по возрастанию, по спирали начиная с 
             //* центра. 

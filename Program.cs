@@ -106,7 +106,7 @@ namespace Tast10var5
             Console.WriteLine();
 
             // Сортировка пузырьком
-            /*for (int j = 0; j < sizeArray; j++)
+            for (int j = 0; j < sizeArray; j++)
             {
                 bool sorted = false;
                 while (!sorted)
@@ -123,9 +123,10 @@ namespace Tast10var5
                         }
                     }
                 }
-            }*/
+            }
 
 
+            // метод выбора
             int tmp;
             int pos;
             for (int i = 0; i < sizeArray; ++i)
@@ -144,6 +145,29 @@ namespace Tast10var5
                     }
                     array[i, pos] = array[i, j];
                     array[i, j] = tmp;
+                }
+            }
+
+            // метод вставки
+            int pos1;
+            int tmp1;
+            for (int i = 0; i < sizeArray; ++i)
+            {
+                for (int j1 = 0; j1 < sizeArray; ++j1)
+                {
+                    pos1 = j1;
+                    tmp1 = array[i, pos1];
+                    for (int j = j1 + 1; j < sizeArray; ++j)
+                    {
+                        if (array[i, j] < tmp1)
+                        {
+                            pos1 = j;
+                            tmp1 = array[i, j];
+                        }
+                    }
+
+                    array[i, pos1] = array[i, j1];
+                    array[i, j1] = tmp1;
                 }
             }
 
